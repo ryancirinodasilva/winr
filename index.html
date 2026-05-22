@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referência Rápida - Comandos e Pastas do Windows</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        
+        .comando {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .comando:hover {
+            background: #e8eef7;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+            transform: translateX(5px);
+        }
+        
+        .comando-titulo {
+            font-weight: bold;
+            color: #667eea;
+            font-family: 'Courier New', monospace;
+            font-size: 1.05em;
+            margin-bottom: 5px;
+        }
+        
+        .comando-descricao {
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        
+        .parametros {
+            margin-top: 12px;
+            padding: 12px;
+            background: #fff3cd;
+            border-left: 3px solid #ffc107;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        
+        .parametro-item {
+            margin: 6px 0;
+            line-height: 1.5;
+        }
+        
+        .parametro-chave {
+            font-weight: bold;
+            color: #856404;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .categoria {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+        }
+        
+        .categoria:first-of-type {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+        }
+        
+        .categoria-titulo {
+            color: #764ba2;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #764ba2;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.85em;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🖥️ Referência Rápida Windows</h1>
+        <p class="subtitle">Comandos, Pastas e Ferramentas Essenciais</p>
+        
+        <div class="categoria">
+            <div class="categoria-titulo">📁 Pastas Shell</div>
+            
+            <div class="comando">
+                <div class="comando-titulo">shell:appsfolder</div>
+                <div class="comando-descricao">Pasta de Apps - Todos os aplicativos instalados</div>
+            </div>
+            
+            <div class="comando">
+                <div class="comando-titulo">shell:startup</div>
+                <div class="comando-descricao">Pasta de inicialização (autoexec)</div>
+            </div>
+            
+            <div class="comando">
+                <div class="comando-titulo">shell:sendto</div>
+                <div class="comando-descricao">Pasta "Enviar para"</div>
+            </div>
+            
+            <div class="comando">
+                <div class="comando-titulo">shell:"E as pasta que quer acessar"</div>
+                <div class="comando-descricao">Ex.: shell:downloads</div>
+            </div>
+        </div>
+        
+        <div class="categoria">
+            <div class="categoria-titulo">⚙️ Painel de Controle e Configurações</div>
+            
+            <div class="comando">
+                <div class="comando-titulo">appwiz.cpl</div>
+                <div class="comando-descricao">Painel de Controle - Desinstalar/gerenciar programas</div>
+            </div>
+            
+            <div class="comando">
+                <div class="comando-titulo">control</div>
+                <div class="comando-descricao">Painel de Controle geral</div>
+            </div>
+            
+            <div class="comando">
+                <div class="comando-titulo">msconfig</div>
+                <div class="comando-descricao">Utilitário de Configuração do Sistema</div>
+            </div>
+            
+            <div class="comando">
+                <div class="comando-titulo">mmsys.cpl</div>
+                <div class="comando-descricao">Som e Dispositivos de Áudio</div>
+            </div>
+            
+            <div class="comando">
+                <div class="comando-titulo">osk</div>
+                <div class="comando-descricao">Teclado virtual</div>
+            </div>
+        </div>
+        
+        <div class="categoria">
+            <div class="categoria-titulo">🔧 Diagnóstico e Gerenciamento</div>
+            
+            <div class="comando">
+                <div class="comando-titulo">devmgmt.msc</div>
+                <div class="comando-descricao">Gerenciador de Dispositivos (útil para diagnósticos como sua câmera Lenovo)</div>
+            </div>
+            
+            <div class="comando">
+                <div class="comando-titulo">dxdiag</div>
+                <div class="comando-descricao">Ferramenta de Diagnóstico DirectX (drivers gráficos, áudio, rede)</div>
+            </div>
+            
+            <div class="comando">
+                <div class="comando-titulo">resmon</div>
+                <div class="comando-descricao">Monitor de Recursos (versão simplificada e mais intuitiva)</div>
+            </div>
+            
+            <div class="comando">
+                <div class="comando-titulo">lusrmgr.msc</div>
+                <div class="comando-descricao">Gerenciador de Usuários Locais</div>
+            </div>
+        </div>
+        
+        <div class="categoria">
+            <div class="categoria-titulo">🌐 Rede e Conectividade</div>
+            
+            <div class="comando">
+                <div class="comando-titulo">ncpa.cpl</div>
+                <div class="comando-descricao">Conexões de Rede</div>
+            </div>
+            
+            <div class="comando">
+                <div class="comando-titulo">mstsc</div>
+                <div class="comando-descricao">RDP (Conexão de Área de Trabalho Remota)</div>
+            </div>
+        </div>
+        
+        <div class="categoria">
+            <div class="categoria-titulo">🔊 Áudio e Dispositivos</div>
+            
+            <div class="comando">
+                <div class="comando-titulo">sndvol</div>
+                <div class="comando-descricao">Volume do Sistema</div>
+            </div>
+            
+            <div class="comando">
+                <div class="comando-titulo">displayfusion</div>
+                <div class="comando-descricao">Configurações de monitor (se instalado)</div>
+            </div>
+        </div>
+        
+        <div class="categoria">
+            <div class="categoria-titulo">⏹️ Comandos de Linha de Comando</div>
+            
+            <div class="comando">
+                <div class="comando-titulo">shutdown [opções]</div>
+                <div class="comando-descricao">Controla desligamento, reinicialização ou hibernação do sistema</div>
+                <div class="parametros">
+                    <div class="parametro-item"><span class="parametro-chave">/s</span> - Desligar (shutdown)</div>
+                    <div class="parametro-item"><span class="parametro-chave">/r</span> - Restart (reiniciar)</div>
+                    <div class="parametro-item"><span class="parametro-chave">/h</span> - Hibernar</div>
+                    <div class="parametro-item"><span class="parametro-chave">/t 60</span> - Tempo em segundos (60 = 1 minuto)</div>
+                    <div class="parametro-item"><span class="parametro-chave">/c "texto"</span> - Comentário/mensagem ao usuário</div>
+                    <div class="parametro-item"><span class="parametro-chave">/a</span> - Abortar/cancelar ação agendada</div>
+                </div>
+                <div class="comando-descricao" style="margin-top: 12px;"><strong>Exemplo:</strong> <code>shutdown /s /t 60</code> (desligar em 60 segundos)</div>
+            </div>
+            
+            <div class="comando">
+                <div class="comando-titulo">taskkill /IM "nomeapp.exe"</div>
+                <div class="comando-descricao">Encerrar processo específico</div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Referência rápida de comandos e ferramentas do Windows | Atualizado em 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
